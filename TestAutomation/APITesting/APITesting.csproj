@@ -71,8 +71,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Unleashed.API\APIClient.csproj">
-      <Project>{FA8710AD-46B4-4A35-9C66-AD5394263846}</Project>
+    <ProjectReference Include="..\APIClient\APIClient.csproj">
+      <Project>{259A01A1-885A-47CA-B306-5801B12D51D6}</Project>
       <Name>APIClient</Name>
     </ProjectReference>
   </ItemGroup>

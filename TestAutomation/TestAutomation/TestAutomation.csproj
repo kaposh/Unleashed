@@ -33,7 +33,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Unleashed.API\APIClient.csproj" />
+    <ProjectReference Include="..\APIClient\APIClient.csproj" />
   </ItemGroup>
 
   <ItemGroup>

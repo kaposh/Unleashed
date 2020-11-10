@@ -2,10 +2,7 @@
 using APITesting.TestData;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Newtonsoft.Json;
-using RestSharp.Serialization.Json;
 using System;
-using System.Linq;
 using System.Net;
 
 namespace APITesting
@@ -34,7 +31,6 @@ namespace APITesting
 			var response = Products.ObsoleteProduct("TST");
 			response.StatusCode.Should().Be(HttpStatusCode.OK);
 		}
-
 
 		[TestMethod]
 		public void ObsoleteProductNonExisting()
