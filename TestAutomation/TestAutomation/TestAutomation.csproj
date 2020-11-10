@@ -33,6 +33,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Unleashed.API\APIClient.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="Features\Product.feature.cs">
       <DependentUpon>Product.feature</DependentUpon>
     </Compile>

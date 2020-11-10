@@ -129,12 +129,15 @@ this.FeatureBackground();
                             "PropertyValue"});
                 table1.AddRow(new string[] {
                             "ProductCodeTxtBox",
-                            "New Product"});
+                            "PROD"});
                 table1.AddRow(new string[] {
                             "ProductDescriptionTxtBox",
                             "Very Short Decription 123"});
 #line 11
  testRunner.And("I add a new product with following properties:", ((string)(null)), table1, "And ");
+#line hidden
+#line 15
+ testRunner.Then("a new product with code \'PROD\' is created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
