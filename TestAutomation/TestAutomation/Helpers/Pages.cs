@@ -6,5 +6,6 @@ namespace TestAutomation.Helpers
 	{
 		public LoginPage LoginPage { get;set;}
 		public HomePage HomePage { get; set; }
+		public AddProductPage AddProductPage { get; set; }
 	}
 }

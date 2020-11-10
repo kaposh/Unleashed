@@ -11,6 +11,7 @@ namespace TestAutomation.Helpers.Driver
 		{
 			_webDriver = new ChromeDriver();
 			_webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+			_webDriver.Manage().Window.Maximize();
 		}
 		public override void Quit()
 		{

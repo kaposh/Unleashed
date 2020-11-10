@@ -36,9 +36,6 @@
     <Compile Update="Features\Product.feature.cs">
       <DependentUpon>Product.feature</DependentUpon>
     </Compile>
-    <Compile Update="Features\Lambdatest.feature.cs">
-      <DependentUpon>LambdaTest.feature</DependentUpon>
-    </Compile>
   </ItemGroup>
 
   <ItemGroup>

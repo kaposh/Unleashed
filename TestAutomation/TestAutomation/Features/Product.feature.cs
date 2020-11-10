@@ -78,7 +78,7 @@ namespace TestAutomation.Features
 #line 3
 #line hidden
 #line 4
-    testRunner.Given("I navigate to the login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I navigate to the login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
         }
         
@@ -113,7 +113,28 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 7
-    testRunner.When("I login with as user \'Bohdan\' on the Login Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I login with as user \'Bohdan\' on the Login Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 8
+ testRunner.And("I click on the Inventory menu item on the main navigation bar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 9
+ testRunner.And("I click on the Products menu item on the main navigation bar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 10
+ testRunner.And("I click on the Add Product menu item on the main navigation bar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                            "PropertyName",
+                            "PropertyValue"});
+                table1.AddRow(new string[] {
+                            "ProductCodeTxtBox",
+                            "New Product"});
+                table1.AddRow(new string[] {
+                            "ProductDescriptionTxtBox",
+                            "Very Short Decription 123"});
+#line 11
+ testRunner.And("I add a new product with following properties:", ((string)(null)), table1, "And ");
 #line hidden
             }
             this.ScenarioCleanup();
