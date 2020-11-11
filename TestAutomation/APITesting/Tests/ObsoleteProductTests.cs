@@ -15,7 +15,7 @@ namespace APITesting
 		[ClassInitialize]
 		public static void SetupTestData(TestContext testContext)
 		{
-			var response = Products.AddProduct("TST", "Test product");
+			var response = Products.AddProduct("PROD", "Test product");
 			response.StatusCode.Should().Be(HttpStatusCode.Created);
 		}
 
@@ -28,7 +28,7 @@ namespace APITesting
 		[TestMethod]
 		public void ObsoleteProductExisting()
 		{
-			var response = Products.ObsoleteProduct("TST");
+			var response = Products.ObsoleteProduct("PROD");
 			response.StatusCode.Should().Be(HttpStatusCode.OK);
 		}
 

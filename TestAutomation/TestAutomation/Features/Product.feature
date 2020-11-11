@@ -1,4 +1,6 @@
-﻿Feature: Product Page
+﻿@Products
+Feature: Product Page
+	As a customer I want to create a new Product
 
 Background: 
 	Given I navigate to the login page

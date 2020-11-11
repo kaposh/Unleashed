@@ -1,9 +1,9 @@
 ﻿
 namespace TestAutomation.DataObjects
 {
-	class Users
+	class UserCredentials
 	{
-		public User Bohdan => new User { UserName = "qa-bohdan@unl.sh", Password = "TestPassword1" };
+		public User Bohdan => new User { UserName = "qa+bohdan@unl.sh", Password = "TestPassword1" };
 		public User GetUser(string userName)
 		{
 			return (User)GetType().GetProperty(userName).GetValue(this, null);

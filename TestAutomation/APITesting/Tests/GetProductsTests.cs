@@ -8,7 +8,7 @@ using System.Net;
 namespace APITesting
 {
 	[TestClass]
-	public class ProductsTests
+	public class GetProductsTests
 	{
 		static Products Products = new Products(ApiCredentials.ApiId, ApiCredentials.ApiKey);
 

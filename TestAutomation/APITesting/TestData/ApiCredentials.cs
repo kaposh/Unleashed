@@ -3,7 +3,7 @@
 	public class ApiCredentials
 	{
 		// TODO These values should be ideally taken from env variables
-		public static string ApiId { get => "089952fd-52dd-497a-9cb8-1b9501afc0af";  }
-		public static string ApiKey { get => "lrUN7o1Vsa6wVXyVgIDBfjgFHjQQdx9PxuLyFwYaWOXbZH8jeK97W303swWtqqpDxkYVRA1I0gPVAnKxZCDYQ=="; }
+		public static string ApiId { get => "7a800e1d-77b6-4d05-b1f8-378b4f09eee1"; }
+		public static string ApiKey { get => "htiApNudeXbpuYlZHkFfANFaMJagbYk2qSpVJ032G4Bu74TlsmyFZeMzmw9Rbt5NsPVbrvXdGdvIEDF1tPhWw=="; }
 	}
 }

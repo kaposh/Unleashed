@@ -23,6 +23,9 @@ namespace TestAutomation.PageObjects
 
 		[FindsBy(How = How.Id, Using = "menubar-2")]
 		public IWebElement InventorysMenuItem { get; set; }
+
+		[FindsBy(How = How.Id, Using = "menubar-4")]
+		public IWebElement SalesMenuItem { get; set; }
 		#endregion
 
 		#region Inventory menu subitems 
@@ -31,6 +34,16 @@ namespace TestAutomation.PageObjects
 
 		[FindsBy(How = How.LinkText, Using = "Products")]
 		public IWebElement ProductsMenuItem { get; set; }
+		#endregion
+
+		#region Sales menu subitems 
+		[FindsBy(How = How.LinkText, Using = "Orders")]
+		public IWebElement OrdersMenuItem { get; set; }
+		#endregion
+
+		#region Sales -> Orders menu subitems 
+		[FindsBy(How = How.LinkText, Using = "Add Sales Order")]
+		public IWebElement AddSalesOrderMenuItem { get; set; }
 		#endregion
 
 		#region Products menu subitems

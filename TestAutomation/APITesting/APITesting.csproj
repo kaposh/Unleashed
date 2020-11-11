@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="TestData\ApiCredentials.cs" />
+    <Compile Include="Tests\CreateProductsTests.cs" />
     <Compile Include="Tests\ObsoleteProductTests.cs" />
     <Compile Include="Tests\GetProductsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
