@@ -11,15 +11,20 @@ namespace TestAutomation.Hooks
         {
             _webDriverFactory = webDriverFactory;
         }
-
+        /// <summary>
+        /// Initialize Web driver
+        /// </summary>
         [BeforeScenario]
-        public void RunBeforeScenario()
+        public void InitializeWebDriver()
         {
             _webDriverFactory.InitWebDriver("Chrome");
         }
 
+        /// <summary>
+        /// Quit Web driver
+        /// </summary>
         [AfterScenario]
-        public void RunAfterScenario()
+        public void QuitWebDriver()
         {
             _webDriverFactory.Driver.Quit();
         }

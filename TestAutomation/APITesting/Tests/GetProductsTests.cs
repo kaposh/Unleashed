@@ -1,5 +1,4 @@
 ﻿using APIClient.Resources;
-using APITesting.TestData;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Newtonsoft.Json;
@@ -10,7 +9,7 @@ namespace APITesting
 	[TestClass]
 	public class GetProductsTests
 	{
-		static Products Products = new Products(ApiCredentials.ApiId, ApiCredentials.ApiKey);
+		static ProductsApi Products = new ProductsApi();
 
 		[ClassInitialize]
 		public static void SetupTestData(TestContext testContext)

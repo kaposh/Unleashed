@@ -23,6 +23,15 @@ namespace TestAutomation.PageObjects
 		[FindsBy(How = How.Id, Using = "ProductSearchButton")]
 		public IWebElement ProductSearchBtn { get; set; }
 
+		[FindsBy(How = How.Id, Using = "QtyAddLine")]
+		public IWebElement QuantityAddLineTxtBox { get; set; }
+
+		[FindsBy(How = How.Id, Using = "PriceAddLine")]
+		public IWebElement PriceAddLineTxtBox { get; set; }
+
+		[FindsBy(How = How.Id, Using = "btnAddOrderLine")]
+		public IWebElement AddOrderLineButton { get; set; }
+
 		[FindsBy(How = How.Id, Using = "CustomerSearchButton")]
 		public IWebElement CustomerSearchBtn { get; set; }
 

@@ -10,7 +10,7 @@ namespace TestAutomation.API
 	[Binding]
 	public sealed class ProductsSteps
 	{
-		static Products Products = new Products(ApiCredentials.ApiId, ApiCredentials.ApiKey);
+		static ProductsApi Products = new ProductsApi();
 
 		[Then(@"a new product with code '(.+)' is created")]
 		public void ThenANewProductIsCreated(string productCode)

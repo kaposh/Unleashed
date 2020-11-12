@@ -37,10 +37,17 @@ namespace TestAutomation.StepDefinitions
 
 		#region Inventory -> Products
 		[When(@"I click on the Add Product menu item on the main navigation bar")]
-		public void IClickOnTheAddproductMenuItem()
+		public void IClickOnTheAddProductMenuItem()
 		{
 			_pages.HomePage.AddProductMenuItem.Click();
 			_pages.AddProductPage = new AddProductPage(_webDriverFactory);
+		}
+
+		[When(@"I click on the View Products menu item on the main navigation bar")]
+		public void IClickOnTheViewProductsMenuItem()
+		{
+			_pages.HomePage.ViewProductsMenuItem.Click();
+			_pages.ViewProductsPage = new ViewProductsPage(_webDriverFactory);
 		}
 		#endregion
 

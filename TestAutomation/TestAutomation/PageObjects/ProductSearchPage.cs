@@ -4,10 +4,10 @@ using TestAutomation.Helpers.Driver;
 
 namespace TestAutomation.PageObjects
 {
-	public class ProductSearchPage
+	public class ProductSearchPage: NavigationBar
 	{
 		private readonly WebDriverFactory _webDriverFactory;
-		public ProductSearchPage(WebDriverFactory webDriverFactory)
+		public ProductSearchPage(WebDriverFactory webDriverFactory) : base(webDriverFactory)
 		{
 			_webDriverFactory = webDriverFactory;
 			PageFactory.InitElements(webDriverFactory.Driver.Get(), this);
@@ -21,14 +21,13 @@ namespace TestAutomation.PageObjects
 
 		private IWebElement GetProductsTableCell(int row, int column)
 		{
-			return _webDriverFactory.Driver.Get().FindElement(By.XPath($"//*[@id='ProductLocalSearch_tccell{row}_{column}']/a"));
+			return _webDriverFactory.Driver.Get().FindElement(By.XPath($"//*[@id='ProductLocalSearch_tccell{row}_{column}']/div/a"));
 		}
 
 		public void SelectAProductByCode(string productCode)
 		{
 			LocalProductSearchTxtBox.SendKeys(productCode);
 			ProductSearchButton.Click();
-			// TODO get control by product code
 			GetProductsTableCell(0, 0).Click();
 		}
 

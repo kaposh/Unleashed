@@ -10,7 +10,7 @@ namespace TestAutomation.API
 	[Binding]
 	public sealed class CustomerSteps
 	{
-		static Customer Customer = new Customer(ApiCredentials.ApiId, ApiCredentials.ApiKey);
+		static CustomerApis Customer = new CustomerApis();
 
 		[Given(@"a customer with customer code '(.+)' and name '(.+)' exists")]
 		public void GivenANewProductIsExists(string customerCode, string customerName)

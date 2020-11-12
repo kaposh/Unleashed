@@ -49,6 +49,9 @@ namespace TestAutomation.PageObjects
 		#region Products menu subitems
 		[FindsBy(How = How.LinkText, Using = "Add Product")]
 		public IWebElement AddProductMenuItem { get; set; }
+
+		[FindsBy(How = How.LinkText, Using = "View Products")]
+		public IWebElement ViewProductsMenuItem { get; set; }
 		#endregion
 	}
 }
